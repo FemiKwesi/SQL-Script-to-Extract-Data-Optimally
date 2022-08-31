@@ -1,3 +1,4 @@
+![Screenshot to show how optimal creating an  INDEX  is](https://user-images.githubusercontent.com/112349616/187793961-234ea459-a367-4826-8f68-5267a1c0abd3.png)
 # SQL-Script-to-Extract-Data-Optimally
 The goal of this project is to show how 
 creating an "INDEX" can optimize the search 
