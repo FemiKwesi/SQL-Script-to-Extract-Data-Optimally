@@ -47,7 +47,7 @@ FINAL SOLUTION
 STEP 4
 There are two solutions to get our final solution  (A)  and solution (B)
 
-Solution  (A)   is a less efficient way to get an optimal execution of the query. This solution took 0.063 seconds to run
+Solution  (A)   is a less efficient way to get an optimal execution of the query. This solution took 0.063 milliseconds to run
 
 (A)
 SELECT idClock_Degrees, Hours, Minutes
@@ -56,7 +56,7 @@ clock_problem.clock_degrees
 WHERE clock_degrees.Hours AND clock_degrees.Minutes IS NOT NULL;
 
 (B)
-Solution  (B)  is a more efficient way to get an optimal execution of the query. This solution took 0.015 seconds to run.
+Solution  (B)  is a more efficient way to get an optimal execution of the query. This solution took 0.015 milliseconds to run.
 This solution requires that we first and foremost create an index on the three columns and then use the where function to filter out the empty/null values in s second query.
 CREATE INDEX clock_index ON clock_problem.clock_degrees(idClock_Degrees,Hours,Minutes);
 SELECT * FROM clock_problem.clock_degrees WHERE clock_degrees.Hours AND clock_degrees.Minutes IS NOT NULL;
